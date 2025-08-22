@@ -6,40 +6,37 @@ public class Customer {
 	int id;
 	Double phoneno;
 	Double rating;
+
 //	parameterized constructor with 4 parameters
-	Customer(String address,int id,Double phoneno,Double rating){
-		this.address=address;
-		this.id=id;
-		this.phoneno=phoneno;
-		this.rating=rating;
+	Customer(String address, int id, Double phoneno, Double rating) {
+		this.address = address;
+		this.id = id;
+		this.phoneno = phoneno;
+		this.rating = rating;
 	}
-	
-	
+
 //	parameterized constructor with 5 parameters
- Customer(String name, String address, int id, Double phoneno, Double rating) {
-	this.name = name;
-	this.address = address;
-	this.id = id;
-	this.phoneno = phoneno;
-	this.rating = rating;
-}
-
-
+	Customer(String name, String address, int id, Double phoneno, Double rating) {
+		this.name = name;
+		this.address = address;
+		this.id = id;
+		this.phoneno = phoneno;
+		this.rating = rating;
+	}
 
 //	parameterized constructor with 3 parameters
-	Customer(int id,Double phoneno,Double rating){
-		this.id=id;
-		this.phoneno=phoneno;
-		this.rating=rating;
+	Customer(int id, Double phoneno, Double rating) {
+		this.id = id;
+		this.phoneno = phoneno;
+		this.rating = rating;
 	}
-	
 
 //	Constructor overloading
 //  parameterized constructor with 2 parameters
 	Customer(String name, String address) {
 		this(999);
 		System.out.println("Parametarised constructor called");
-	    this.name = name;
+		this.name = name;
 		this.address = address;
 	}
 
@@ -64,23 +61,22 @@ public class Customer {
 
 		Customer c2 = new Customer(899);
 		c2.show();
-		
-		Customer c3=new Customer(222,2556192.0,5.0);
+
+		Customer c3 = new Customer(222, 2556192.0, 5.0);
 		c3.show();
-		
-		Customer c4=new Customer("kondepalli",454,244265.5,4.0);
+
+		Customer c4 = new Customer("kondepalli", 454, 244265.5, 4.0);
 		c4.show();
-		
-	    Customer c5=new Customer("Ammulu","hyd",1212,955037.2,5.4);
-	    c5.show();
+
+		Customer c5 = new Customer("Ammulu", "hyd", 1212, 955037.2, 5.4);
+		c5.show();
 	}
-	
 
 	void show() {
 		System.out.println(name);
 		System.out.println(address);
 		System.out.println(id);
-     	System.out.println(phoneno);
+		System.out.println(phoneno);
 		System.out.println(rating);
 		System.out.println("******************");
 	}
