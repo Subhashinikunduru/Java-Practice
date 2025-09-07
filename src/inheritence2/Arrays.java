@@ -13,7 +13,7 @@ public class Arrays {
 				for(int n:num) {
 					count+=get2scount(n);
 				}
-				System.out.println(count);
+				System.out.println(count );
 		
 //		for (int n : num) {
 //			String numstr = String.valueOf(n);
